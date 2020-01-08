@@ -1,7 +1,7 @@
 {
   "name": "front-end-evaluation",
   "version": "1.0.0",
-  "description": "",
+  "description": "> 此库为非计培训前端测评的 homework, 根据 db.json 中的数据，实现效果图中的效果",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "json-server": "^0.15.1"
-  }
+    "json-server": "^0.15.1",
+    "prettier": "^1.19.1",
+    "prettier-stylelint": "^0.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edwardlin-zlt/project-manager-2020-1-8-6-26-22-695.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Edwardlin-zlt/project-manager-2020-1-8-6-26-22-695/issues"
+  },
+  "homepage": "https://github.com/Edwardlin-zlt/project-manager-2020-1-8-6-26-22-695#readme"
 }
