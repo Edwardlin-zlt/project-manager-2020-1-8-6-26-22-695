@@ -1,8 +1,20 @@
+/* clear default style */
 * {
   padding: 0;
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+/* main style */
 html,
 body {
   width: 100%;
@@ -10,13 +22,14 @@ body {
 
 .main {
   display: flex;
-  direction: column;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   font-family: serif, "Microsoft Yahei";
 
 }
 
+/* cards panel section */
 .cards {
   display: flex;
   justify-content: space-evenly;
@@ -85,8 +98,67 @@ body {
   background: #3b67a4;
 }
 
-.test {
-  font-family: "iconfont";
-  font-size: 100px;
-  color: black;
+/* detailed info section */
+.detailed-info {
+  width:1280px;
+}
+
+.project-name {
+  width:280px;
+}
+
+.project-describe{
+  display: -webkit-box;
+  width: 540px;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.deadline {
+  width: 180px;
+}
+
+.status { 
+  width: 180px;
+ }
+
+.status-active {
+  color: #666666;
+}
+
+.status-pending {
+  color: #ee706d;
+}
+
+.status-closed {
+  color: #f7da47;
+}
+
+.operation {
+  width: 90px;
+}
+
+.info-list-head {
+  display: flex;
+  background: #EBECF0;
+  color: #333;
+  padding: 8px;
+  align-items: center;
+  border-bottom: 1px solid #DCDEE3;
+}
+
+.info-row{
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  border-bottom: 1px solid #DCDEE3;
+}
+
+.del-btn {
+  color: white;
+  background: #ee706d;
+  padding: 5px 9px;
+  border-radius: 2px;
 }
