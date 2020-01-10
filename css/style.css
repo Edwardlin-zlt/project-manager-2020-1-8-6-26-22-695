@@ -25,8 +25,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  font-family: serif, "Microsoft Yahei";
-
+  font-family: serif, "iconfont","Microsoft Yahei";
+  position: relative;
 }
 
 /* cards panel section */
@@ -168,4 +168,90 @@ body {
   background: #ee706d;
   padding: 5px 9px;
   border-radius: 2px;
+}
+
+.del-btn:hover {
+  cursor: pointer;
+}
+
+
+/* alert window */
+.alert-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  height: 140px;
+  margin: -70px 0 0 -170px;
+  z-index: 2;
+  background: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  visibility: hidden;
+}
+
+/* I want use :before but it seem not easy to
+choose this DOM using js */
+.mask {
+  position: absolute;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.close-window {
+  align-self: flex-end;
+  font-size: 16px;
+}
+
+.icon-wenhao::before {
+  color: #F1C826;
+  font-size: 24px;
+  margin-right: 6px;
+}
+
+.icon-wenhao {
+  line-height: 24px;
+  color: #333;
+  font-size: 20px;
+}
+
+.alert-window p {
+  margin-left: 40px;
+  color: #666;
+  margin: 8px 0 18px 30px;
+  font-size: 14px;
+}
+
+.btn-group {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.btn {
+  box-sizing: border-box;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px #999;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.sure {
+  background-color: #3080FE;
+  margin: 0 10px 0 auto;
+}
+
+.cancel {
+  color: black;
 }
