@@ -7,7 +7,7 @@ var toDelId = -1;
 function main() {
   getListData();
 
-  infoList.addEventListener("click", function(e) {
+  infoList.addEventListener("click", function (e) {
     switch (true) {
       case (e.target.className.includes("del-btn")):
         toDelId = e.target.parentElement.parentElement.getAttribute("data-id");
@@ -16,7 +16,7 @@ function main() {
     }
   });
 
-  alertWindow.addEventListener("click", function(e){
+  alertWindow.addEventListener("click", function (e) {
     switch (true) {
       case e.target.className.includes("close-window")
         || e.target.className.includes("cancel"):
@@ -57,7 +57,7 @@ function getListData() {
   options = {
     url: API_ROOT,
     method: "get",
-    success: function(result) {
+    success: function (result) {
       let data = JSON.parse(result);
       renderInfoList(data);
     }
@@ -87,7 +87,7 @@ function renderInfoList(data) {
         <span class="deadline">${cur.endTime}</span>
         <span class="status status-${cur.status.toLowerCase()}">${
       cur.status
-    }</span>
+      }</span>
         <span class="operation"><button class="del-btn">删除</button></span>
       </li> `;
     return (acc += curStr);
@@ -103,7 +103,7 @@ function delInfoRowData(id) {
   options = {
     url: API_ROOT + `/${id}`,
     method: "DELETE",
-    success: function(result) {
+    success: function (result) {
       console.log(`Deleted Item ID: ${id}`)
       delInfoRowEle(id);
     }

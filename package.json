@@ -10,8 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "json-server": "^0.15.1",
-    "prettier": "^1.19.1",
-    "prettier-stylelint": "^0.4.2"
   },
   "repository": {
     "type": "git",
