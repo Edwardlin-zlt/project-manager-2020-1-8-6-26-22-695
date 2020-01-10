@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+h2 {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: normal;
+}
+
 li {
   list-style: none;
 }
@@ -33,14 +39,16 @@ body {
 .cards {
   display: flex;
   justify-content: space-evenly;
+  margin: 20px 0;
+  width: 95%;
 }
 
 .card {
-  width: 280px;
+  flex: 1;
   height: 70px;
   background-color: aqua;
   border-radius: 6px;
-  margin: 10px;
+  margin: 0 10px;
   padding: 15px;
   position: relative;
 }
@@ -84,6 +92,7 @@ body {
 
 .all {
   background: #31b48d;
+  margin-left: 0;
 }
 
 .undone {
@@ -96,25 +105,27 @@ body {
 
 .done {
   background: #3b67a4;
+  margin-right: 0;
 }
 
 /* detailed info section */
 .detailed-info {
-  width: 1280px;
+  width: 95%;
   margin-bottom: 40px;
 }
 
 .detailed-info > h2 {
-  padding: 16px 8px;
+  padding: 16px 0;
+  font-size: 20px;
 }
 
 .project-name {
-  width:280px;
+  width: 20%;
 }
 
 .project-describe{
   display: -webkit-box;
-  width: 540px;
+  width: 40%;
   overflow : hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
@@ -124,11 +135,11 @@ body {
 }
 
 .deadline {
-  width: 180px;
+  width: 15%;
 }
 
 .status { 
-  width: 180px;
+  width: 15%;
  }
 
 .status-active {

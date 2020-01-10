@@ -8,13 +8,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 5,
-      "name": "okhttp",
-      "endTime": "2018-12-05",
-      "description": "OkHttp 是 Square 公司出品的 HTTP 另一个请求库, Google 不推荐人们使用 HttpClient, 可是 HttpURLConnection 实在是太难用了, 因此很多人使用了 OkHttp 来解决这问题, 据说 Android4.4 的源码中可以看到 HttpURLConnection 已经替换成 OkHttp 实现呢",
-      "status": "ACTIVE"
-    },
-    {
       "id": 6,
       "name": "picasso",
       "endTime": "2018-12-06",
