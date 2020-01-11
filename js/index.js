@@ -3,6 +3,7 @@ var infoList = document.getElementById("info-list");
 var alertWindow = document.querySelector(".alert-window")
 var alertWindowMask = document.querySelector(".mask")
 var toDelId = -1;
+var allNumEle = document.querySelector(".all .count-num");
 
 function main() {
   getListData();
@@ -113,7 +114,17 @@ function delInfoRowData(id) {
 
 function delInfoRowEle(id) {
   let toDelEle = infoList.querySelector(`[data-id = "${id}"]`);
+  let status = toDelEle.querySelector(".status").innerHTML;
   infoList.removeChild(toDelEle);
+  updateCardNum(status);
+}
+
+function updateCardNum(type) {
+  let card = document.querySelector(`.${type}`);
+  let countNumEle = card.querySelector(".count-num")
+  let curNum = parseInt(countNumEle.innerHTML);
+  countNumEle.innerHTML = --curNum;
+  allNumEle.innerHTML = --parseInt(allNumEle.innerHTML);
 }
 
 main();

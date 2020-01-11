@@ -95,15 +95,15 @@ body {
   margin-left: 0;
 }
 
-.undone {
+.card-pending {
   background: #38a1f2;
 }
 
-.undergoing {
+.card-active {
   background: #7538c7;
 }
 
-.done {
+.card-closed {
   background: #3b67a4;
   margin-right: 0;
 }
