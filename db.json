@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "id": 8,
+      "name": "android-best-practices",
+      "endTime": "2018-12-08",
+      "description": "Android 开发最佳实践, 里面所介绍的经验都是来自于 Futurice 公司 Android 开发者, 介绍内容有 Android 开发规范, 架构, 布局技巧, 以及使用一些有助于快速开发相关工具等等, 非常适合新手去学习",
+      "status": "CLOSED"
+    },
+    {
       "id": 10,
       "name": "android-async-http",
       "endTime": "2018-12-10",

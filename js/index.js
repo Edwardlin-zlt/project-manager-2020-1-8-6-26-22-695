@@ -114,17 +114,17 @@ function delInfoRowData(id) {
 
 function delInfoRowEle(id) {
   let toDelEle = infoList.querySelector(`[data-id = "${id}"]`);
-  let status = toDelEle.querySelector(".status").innerHTML;
+  let status = toDelEle.querySelector(".status").innerHTML.toLowerCase();
   infoList.removeChild(toDelEle);
   updateCardNum(status);
 }
 
 function updateCardNum(type) {
-  let card = document.querySelector(`.${type}`);
+  let card = document.querySelector(`.card-${type}`);
   let countNumEle = card.querySelector(".count-num")
   let curNum = parseInt(countNumEle.innerHTML);
-  countNumEle.innerHTML = --curNum;
-  allNumEle.innerHTML = --parseInt(allNumEle.innerHTML);
+  countNumEle.innerHTML = curNum - 1;
+  allNumEle.innerHTML = parseInt(allNumEle.innerHTML) - 1;
 }
 
 main();
